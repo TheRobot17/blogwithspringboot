@@ -1,0 +1,1 @@
+The Name Of The Porject is blog with spring boot .this was developed using spring boot framework .a simple and easy project that can help the begginer's who want's to start with simple projects .this project includes spring boot framework ,spring security,thymeleaf,maven ,h2-database etc
