@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragment/head::head">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="card p-4 registerform">
+	<h4 class="container bg-success p-2 px-4">Register User here</h4>
+		<form  th:action="@{/register}" method="post" th:object="${register}">
+			<label>Name:</label>
+			<input  type="text" name="name" placeholder="ENter Name" class="form-control mt-2 mb-2" />
+			<label>Email:</label>
+			<input type="email" name="email" placeholder="ENter Email" class="form-control mt-2 mb-2" />
+			<label>Password:</label>
+			<input type="password" name="password" placeholder="Enter password" class="form-control mt-2 mb-2" />
+			<label>Dob:</label>
+			<input type="text" name="dob" placeholder="Enter dob" class="form-control mt-2 mb-2" />
+			<label>PhoneNo:</label>
+			<input type="text" name="phoneno" placeholder="ENter phoneno" class="form-control mt-2 mb-2" />
+			<label>Address:</label>
+			<input type="text" name="address" placeholder="Enter address" class="form-control mt-2 mb-2" /> 
+			<div class="mt-2 mb-2"> <span>Already have an account</span> <a th:href="@{/login}">Login</a> </div>
+			<div class="text-center"> <button class="btn btn-outline-success" type="submit">Register</button> </div>
+		</form>
+	</div>
+
+</div>
+
+</body>
+</html>

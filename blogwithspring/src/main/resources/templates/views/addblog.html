@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragment/head::head">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<nav th:replace="/fragment/head::navbar1">
+
+</nav>
+
+
+<div class="card addblog">
+	<div class="card-body">
+	<h4 class="">Add Blog</h4>
+		<form th:action="@{/addblog}" method="post" th:object="${addblog}">
+			<input name="title" class="form-control mt-2 mb-2" type="text" placeholder="Enter Title" required="required" />
+			<input name="content" class="form-control " type="text" placeholder="Enter Content" required="required" />
+			<div class="text-center mt-3">
+				<button class="btn btn-outline-success" >Add Blog</button>
+			</div>
+		</form>
+	
+	</div> 
+
+
+</div>
+
+</body>
+</html>

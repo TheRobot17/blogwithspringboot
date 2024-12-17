@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragment/head::head">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<nav th:replace="/fragment/head::navbar1">
+
+</nav>
+<div class="container mt-5 ">
+	<div class="card p-4 mb-2" th:each="blogs :${listofblog}">
+		<h1 th:text=${blogs.title}></h1>
+		<p th:text="${blogs.content}"></p>
+	</div>
+
+</div>
+
+</body>
+</html>

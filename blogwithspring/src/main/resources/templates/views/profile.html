@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragment/head::head">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<nav th:replace="/fragment/head::navbar1">
+
+</nav>
+
+
+
+
+
+<div class="">
+	<div class="">
+		 
+		 <div class=" profile card p-3 text-center" >
+		 <div class="mb-2 text-center">
+		 <h1 class="bg-success">Profile Details</h1>
+			 <img  width="200px" height="200px" alt="image" th:src="@{/images/defaultp.jpg}" style="border-radius: 100%; border-color: black; border-style: solid;"  class="">
+	
+</div>
+<div class="">
+	<form action="" th:object="${details}">
+		<input class="form-control" type="text" name="name" th:field="*{name}" disabled="disabled"> <br>
+		<input class="form-control" type="text" name="email" th:field="*{email}" disabled="disabled"> <br>
+		<input class="form-control" type="text" name="dob" th:field="*{dob}" disabled="disabled"> <br>
+		<input class="form-control" type="text" name="address" th:field="*{address}" disabled="disabled"> <br>
+	</form>
+	</div>
+</div>
+	</div>
+	 
+</div>
+
+
+
+</body>
+</html>
